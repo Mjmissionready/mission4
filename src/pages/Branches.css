@@ -1,0 +1,86 @@
+.branches {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px;
+  padding-top: 50px;
+  font-family: var(--SecondText);
+}
+
+.branches h1 {
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 900;
+  margin: 100px 0;
+  font-family: var(--PrimaryText);
+  letter-spacing: 1px;
+}
+
+.branches span {
+  color: var(--accentRed);
+}
+
+.rrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.kard {
+  padding: 0 40px;
+  color: #222;
+  width: 300px;
+  height: 220px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.3s;
+  margin: 40px;
+}
+
+.kard h3 {
+  font-size: 30px;
+  color: var(--accent);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.kard h4 {
+  font-size: 21px;
+  color: var(--text);
+  margin: 10px 0 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.kard p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.kard span {
+  color: var(--accentRed);
+  font-weight: 500;
+}
+
+.info {
+  margin: 30px;
+  display: flex;
+  width: 100%;
+  padding: 0 300px 100px;
+}
+
+.info h3 {
+  font-size: 20px;
+  color: var(--text);
+  font-weight: 500;
+  text-align: center;
+}
+
+.info span {
+  color: var(--accent);
+}

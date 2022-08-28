@@ -1,0 +1,151 @@
+/* "Mouse Memoirs"
+  "Handlee"
+  "Luckiest Guy"
+  "Abril Fatface"
+  "Poller One"
+  "Chango"
+  "Fredericka the Great"
+  "Oleo Script Swash Caps"
+  "Lobster"
+  "Inspiration" */
+
+.header {
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 700px;
+  height: 700px;
+  flex-direction: column;
+}
+
+.bgimg {
+  position: absolute;
+  background: url("../Img/bugatti.jpg") fixed;
+  background-color: black;
+  background-position: right center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+.headerContent h1 {
+  position: relative;
+  text-align: right;
+  font-size: 5.5em;
+  width: 400px;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Rubik";
+  animation: slide 2s ease-in;
+  text-shadow: -1px -1px 2px rgb(112, 111, 111);
+}
+
+.headerContent h1 span{
+color: rgba(233, 57, 57, 0.966);
+text-shadow: 1px 1px 10px rgba(85, 64, 6, 0.918);
+font-family: "Rubik";
+}
+
+@keyframes slide {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -300px;
+    opacity: 0;
+  }
+}
+
+/* .bgcar {
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-left: 180px;
+  padding-bottom: 100px;
+  width: 65%;
+} */
+
+.searchBar {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(212, 211, 211, 0.07);
+  align-items: center;
+  border: 2px ridge rgba(136, 136, 136, 0.4);
+  border-radius: 20px;
+  padding: 4px 6px;
+  backdrop-filter: blur(4px) saturate(180%);
+  animation: slide 1.5s ease-in;
+}
+
+.searchBar input {
+  display: inline-block;
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: var(--accent);
+}
+
+.searchBar:hover {
+  border: 2px ridge var(--navbar);
+  box-shadow: 0px 0px 15px #cececf;
+}
+
+::placeholder {
+  color: #cececf;
+  font-family: "Fredericka the Great";
+  letter-spacing: 3px;
+}
+
+.searchBar button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #5c5b5be5;
+  color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+
+  .headerContent {
+    align-items: flex-start;
+  }
+
+  .headerContent h1 {
+    font-size: 4.5em;
+    text-align: left;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --body-bg: #f5f8ff;
+  --box-bg: #fff;
+  --input-bg: #f5f8ff;
+  --txt-color: #2f2d2f;
+  --txt-second-color: #ccc;
+  --text: "Roboto";
+}
+
+.box {
+  background-color: var(--box-bg);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 100px;
+  letter-spacing: 2px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 70px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#submitBtn {
+  border: 2px ridge #88aaf8;
+  border-radius: 25px;
+  text-align: center;
+  text-justify: center;
+  text-shadow: 1px 1px 2px rgba(78, 78, 78, 0.651);
+  box-shadow: 1px 1px 2px rgba(49, 49, 49, 0.651);
+  padding: 6px 20px;
+  cursor: pointer;
+  margin: 70px;
+}

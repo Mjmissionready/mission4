@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --navbar: rgb(255, 255, 255);
+  --nav-text: rgb(6, 6, 34);
+  --text: rgb(20, 20, 20);
+  --accent: rgba(23, 124, 255, 0.966);
+  --accentRed: rgba(233, 57, 57, 0.966);
+  --hover: rgba(233, 57, 57, 0.966);
+  --PrimaryText: 'Nova Round';
+  --SecondText: 'Roboto';
+}
+
+/* "Mouse Memoirs"
+*/
+
+a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  font-family: var(--PrimaryText);
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 1);
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  z-index: 10;
+}
+
+.nav__logo {
+  color: var(--nav-text);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nav__logo img {
+  height: 30px;
+  width: auto;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+.nav__menu li {
+  position: relative;
+  padding: 8px 22px;
+  margin: 0 18px;
+}
+
+.nav__menu li:hover {
+  /* background-color: rgba(199, 199, 202, 0.925);
+  color: white; */
+  border: 2px ridge var(--hover);
+  border-radius: 25px;
+  text-align: center;
+  text-justify: center;
+  text-shadow: 1px 1px 2px rgba(78, 78, 78, 0.651);
+  box-shadow: 1px 1px 2px rgba(49, 49, 49, 0.651);
+  padding: 6px 20px;
+}
+
+.nav__icons {
+  list-style: none;
+  display: flex;
+}
+
+.nav__icons a {
+  color: var(--nav-text);
+  display: flex;
+  text-align: start;
+}
+
+.nav__icons li {
+  padding: 8px 12px;
+}
+
+.nav__toggleBtn {
+  position: absolute;
+  right: 40px;
+  display: none;
+  color: var(--nav-text);
+}
+
+.nav__menu.active,
+.nav__icons.active {
+  display: flex;
+}
+
+/* Media Query start */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 40px;
+  }
+
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav__toggleBtn {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .box-container {
+    width: 100%;
+  }
+}

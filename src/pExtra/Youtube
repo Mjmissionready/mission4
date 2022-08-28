@@ -1,0 +1,66 @@
+import * as React from "react";
+import testImage from "./car1.jpg";
+import styled from "styled-components";
+
+export default function Branches() {
+
+    state = {
+        currentImage: ''
+    }
+
+    objectDetection = async () => {
+        const model = await automl.loadObjectDetection('.object_detection_v1/model.json')
+        const img = document.getElementById('testImage')
+        const imgSrc = img.src
+        const option = { score: .20, iou: 0.5, topk: 20 };
+        const predictions = await model.detect(img, option)
+
+        console.log('the predictions', predictions);
+        this.drawBoxes(predictions);
+    }
+
+    drawBoxes = (predictions) => {
+        const svg = document.querySelector('svg')
+        predictions.forEach(prediction => {
+            const { box, label, score } = predictioncons;
+            const { left, top, width, height } = box;
+            const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            rect.setAttribute('width', width);
+            rect.setAttribute('height', height);
+            rect.setAttribute('x', left);
+            rect.setAttribute('y', top);
+            rect.setAttribute('class', box);
+            rect.setAttribute('style', 'stroke#006600; fill: none');
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', left);
+            text.setAttribute('y', top);
+            text.setAttribute('class', label);
+            text.setAttribute('style', 'stroke#006600; fill:#000000');
+
+            text.textContent = `${label}: ${score.toFixed(3)}`
+            svg.appendChild(rect);
+            svg.appendChild(text);
+            const textBBox = text.getBBox();
+            const textRect = document.createElementNS('http://www.w3.org/2000/svg', rect)
+            textRect.setAttribute('x', textBBox.x);
+            textRect.setAttribute('y', textBBox.y);
+            textRect.setAttribute('width', textBBox.width);
+            textRect.setAttribute('height', textBBox.height);
+            text.setAttribute('class', 'label-rect');
+            text.setAttribute('style', "stroke:#006600, fill:#000000");
+            svg.insertBefore(textRect, text);
+        });
+    }
+
+    return (
+        <>
+            <div style={{ width: 600, height: 600, bkacground: '#fff' }}>
+                <img style={{ width: 600, height: 600 }} id="testImage" src={{ testImage }} alt='an Image' />
+                <svg id="theBox" width="600" height="600" style={{ position: "absolute", top: 0, left: 0 }}>
+                </svg>
+            </div>
+            <button onClick={() => this.objectDetection()}> Detect
+            </button>
+        </>
+    );
+}

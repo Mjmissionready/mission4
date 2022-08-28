@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "turners-lycv",
+  "private_key_id": "93bca5b210e5495e91c845561523545879511001",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0lNjzUcue/9ib\nPNDYHv4T6ZVyNmgW6VbtpvTWKan/y1lHM7sYetT63KpmOjaTt58A8y6n3r0TbV/p\nTXI0Dyt9Wnem0Ib81cicd50PdybeK7XgN8515aqchv9/D0wcdAe/1zzcqLAe6ApG\n45k4qJGgwm/rZ6FV5v813EuiqWt6C+xnPYwt1kW9pxoDx912HvBj005qqXRGg3RM\nqtBIqSzDVnvvAkg3fi5AESU67Jq4VnO9PREfAp+dzpXlbUSOhLR/gtev2VFawnPI\nsbmeWtLpyRIjguEd5ypjNj4upTWEDUFSq9BSAjLLYrUsoO9islZYemuuKDU+jaad\nkxCVPezZAgMBAAECggEAFPrkpEtU5QeMRMfpayyZoBpfra3uxLeuLOz8bdvYF4MK\nf7RdyLuvnigwR3F8uQeIuolmWqRNExJeZeqEqdH332fY9ilsv3f+h1g5yAvTuRT6\nu9679tRcsLQZ/8r5EKa15kbVWD0kfii/FeqYOP4TsknYyzCmbMaqULmEE5VLqnmB\nZw0CYqXH2RuW+JgKAJtWksNrM1F2tA2aHW/Qiq3dEJST0NvBQbpf3yTw/tNWk/CX\nx25TCkJjcbO8lq0cEu1yB9aqJ/6ziSeZYEqGJrYhvlfJi3B5cflZPjx3Sx7KaxCk\nkJfO5K+wu3xunlkp2yql5cHJhJV84p/qkaISBI4NwQKBgQDgm7ZEvNJFfrH3i/MG\nZHA9eKoIb+ZmoCZT/v7GoXASNne3t5N7Shlg1gkxCiybqBi/AAvZ3bmyMYSLENWa\n4K86ROwly1c0dVcTUUMbLELZ3eJexVIhNukQ3WG3FJVaUogvwY05TJlSl/YFyK/O\nFl2vLaTnTRxuaICz1TbN/vRfQQKBgQDN0eTxY8nOXQrtYbIDX5bdCw9ixuhSgJvi\nRjOzu605lcM2dx5OZH12/BX+oSC2ZLKAIgH5XgI1vG/1NMkyLYMBOR+tqdwliIwp\nQlex7yTyuOWBtIntPR4Km9MJ+th1fQYTM8O/qnBn1EUA9s4Cb1fmSF5k/ktrYZqt\nrhFWYcA/mQKBgQDd0KlWhOtb+l0jTbC59WLrMkkpf+kYHLz9YuyVmUUml2fvpXoe\n3fTmLzpwlc2sA3w81Hzfshr7oe91rzBkfdRPRVW5lXEPu3o895nAMhvrMTenxFLx\nvlq5bwhbWBaPVsZr80fW+JDKgoxS9fi5HFl08SzTyNF1L/s6niw7j7gigQKBgQC9\nJmmV4hRDv8RcFk2nxgB6kkCIka5Oq/0WvVeklRUEd/sYoe5LMxUO9WstQF004mQd\nV6Oizd+QDOaDXgiNQcBErn/LdPBp2gydmmfHkbTOEFhzlDyxt1pVe5E+ebbWepjL\nquX5ziRRd4YW9bqsCDGq49VEUWN0gxXJCdDLJzir+QKBgH8Kn1ZNQknsuGVAtmbG\ndg2GwtiwwG/xfG6NHbCgZjcor8+m/lAg4dFrkQs83QOn2CZoH989ZKOSJ0wZGrd0\nyLhrN+akojlJubdBo6vTN+tDW617tx2vTli8bnRa8zGoYiPYcFXzL8v0YYHSmU36\ndsUMoQ007uH55BzYq/Aovtl7\n-----END PRIVATE KEY-----\n",
+  "client_email": "turners@turners-lycv.iam.gserviceaccount.com",
+  "client_id": "109572033584152906272",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/turners%40turners-lycv.iam.gserviceaccount.com"
+}
