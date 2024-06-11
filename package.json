@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@google-cloud/vision": "^2.4.2",
+    "@google-cloud/vision": "^3.0.0",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
     "@mui/styled-engine-sc": "^5.9.3",
